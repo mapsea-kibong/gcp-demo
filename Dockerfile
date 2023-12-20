@@ -8,6 +8,7 @@ COPY src src
 RUN chmod +x ./gradlew
 RUN ./gradlew build --exclude-task test
 
-RUN mkdir /app
-ADD /build/libs/gcp-demo-0.0.1.jar /app
-CMD [ "java", "-jar", "/app/gcp-demo-0.0.1.jar" ]
+RUN cp ./build/libs/gcp-demo-0.0.1.jar ./app.jar
+EXPOSE 80
+
+CMD [ "java", "-jar", "app.jar" ]
