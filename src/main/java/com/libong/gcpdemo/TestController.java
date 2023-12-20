@@ -8,6 +8,6 @@ public class TestController {
 
     @GetMapping
     public String testGcp(){
-        return "hello Gcp Cloud Run";
+        return "hello Gcp Cloud Run Deploy Complete";
     }
 }
