@@ -11,3 +11,5 @@ steps:
     entrypoint: gcloud
     args: ['run', 'deploy', 'gcp-demo', '--image', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo', '--region', 'asia-northeast3']
 
+images:
+  - asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo
