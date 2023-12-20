@@ -9,5 +9,5 @@ steps:
 
   - name : 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', 'gcp', '--image', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo', '--region', 'asia-northeast3']
+    args: ['run', 'deploy', 'gcp-demo', '--image', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo', '--region', 'asia-northeast3']
 
