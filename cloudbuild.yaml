@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     id: 'build-docker-file'
-    args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo']
+    args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo', '-f', './Dockerfile', '.']
 
   - name : 'gcr.io/cloud-builders/docker'
     id: 'push-docker-file-artifact-registry'
