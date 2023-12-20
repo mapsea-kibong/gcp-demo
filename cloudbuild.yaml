@@ -1,7 +1,7 @@
 steps:
   - name: 'bash'
     id: 'build'
-    args: ['./gradlew'. 'build']
+    args: ['./gradlew', 'build']
 
   - name: 'gcr.io/cloud-builders/docker'
     id: 'build-docker-file'
