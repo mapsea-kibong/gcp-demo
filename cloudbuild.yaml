@@ -1,0 +1,12 @@
+steps:
+  - name: 'bash'
+    id : 'build'
+    args: ['./gradlew'. 'build']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id : 'build-docker-file'
+    args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/season-mapsea/gcp-demo/gcp-demo']
+
+  - name : 'gcr.io/cloud-builders/docker'
+    id : 'push-docker-file-artifact-registry'
+    args: ['push', 'asia-northeast3-docker.pkg.dev/season-mapsea/gcp-demo/gcp-demo']
