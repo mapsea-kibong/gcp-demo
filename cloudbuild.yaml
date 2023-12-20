@@ -1,8 +1,4 @@
 steps:
-  - name: 'bash'
-    id: 'build'
-    args: ['./gradlew', 'build']
-
   - name: 'gcr.io/cloud-builders/docker'
     id: 'build-docker-file'
     args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo']
