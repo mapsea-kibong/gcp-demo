@@ -5,8 +5,8 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
     id : 'build-docker-file'
-    args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/season-mapsea/gcp-demo/gcp-demo']
+    args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo']
 
   - name : 'gcr.io/cloud-builders/docker'
     id : 'push-docker-file-artifact-registry'
-    args: ['push', 'asia-northeast3-docker.pkg.dev/season-mapsea/gcp-demo/gcp-demo']
+    args: ['push', 'asia-northeast3-docker.pkg.dev/majestic-trail-408701/gcp-demo/gcp-demo']
